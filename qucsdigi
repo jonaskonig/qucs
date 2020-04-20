@@ -60,12 +60,12 @@ if [ ! -f $NAME ]; then
     exit 1
 fi
 
-CXX=`freehdl-config --cxx`
-CXXFLAGS=`freehdl-config --cxxflags`
-LIBS=`freehdl-config --libtool`
-IEEELIBS=`freehdl-config --ieee`
-LDFLAGS=`freehdl-config --ldflags|sed -e 's/ @LDFLAGS@/\/freehdl/g'|sed -e 's/@LIBS@//g'`
-LIBTOOL=`freehdl-config --linker`
+#CXX=`freehdl-config --cxx`
+#CXXFLAGS=`freehdl-config --cxxflags`
+#LIBS=`freehdl-config --libtool`
+#IEEELIBS=`freehdl-config --ieee`
+#LDFLAGS=`freehdl-config --ldflags|sed -e 's/ @LDFLAGS@/\/freehdl/g'|sed -e 's/@LIBS@//g'`
+#LIBTOOL=`freehdl-config --linker`
 
 cp $NAME digi.vhdl
 NAME="digi"
